@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "8af9b4e7-8d33-46a5-a9a4-01593110e251",
+		"name": "QUIZ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "All Categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/all-categories/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"all-categories",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Quiz",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Atharva\",\n    \"category\": \"abfe464c-cb29-4e72-82a6-0cc5bf4c03c1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/create-quiz/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"create-quiz",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set Quiz",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"quest\": \"dbf96334-ee87-4219-8132-8be54ca6911e\",\n    \"ans\": \"1aaa9435-f3b9-440d-a9a5-56e9b5641344\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/set-quiz/6708e45a-6b0e-4ac9-8dbe-1859ae45d15a/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"set-quiz",
+						"6708e45a-6b0e-4ac9-8dbe-1859ae45d15a",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Share Quiz",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"abc\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/quiz/6708e45a-6b0e-4ac9-8dbe-1859ae45d15a/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"quiz",
+						"6708e45a-6b0e-4ac9-8dbe-1859ae45d15a",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Play Quiz",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"abc\",\n    \"quest\": \"ce174a5b-330c-49d4-9048-5bb78b993a93\",\n    \"ans\": \"f32a2981-a43d-476c-ad56-cd343526287e\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/answer-quiz/6708e45a-6b0e-4ac9-8dbe-1859ae45d15a/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"answer-quiz",
+						"6708e45a-6b0e-4ac9-8dbe-1859ae45d15a",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Result",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"abc\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/result/6708e45a-6b0e-4ac9-8dbe-1859ae45d15a/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"result",
+						"6708e45a-6b0e-4ac9-8dbe-1859ae45d15a",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
