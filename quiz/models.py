@@ -30,6 +30,7 @@ class ScoreModel(BaseModel):
     quiz = models.ForeignKey(QuizModel, related_name="quiz_score", on_delete=models.CASCADE)
     score = models.IntegerField(default=0)
 
+
 @receiver(post_save, sender=AnswerQuizModel)
 def calculate_score(sender, instance, *args, **kwargs):
     try:
@@ -45,5 +46,4 @@ def calculate_score(sender, instance, *args, **kwargs):
         score_obj.save()
     except Exception as e:
         print(e)
-    # print("###################")
 

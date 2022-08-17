@@ -1,5 +1,5 @@
 
-# Quiz Application
+## Quiz Application
 
 Its a simple and fun to use application.
 You can make your own quizes and send the lik of the quiz to your friends.
@@ -11,14 +11,20 @@ Lets see who knows you better.
 Project Inspired from : https://funtriviaquiz.com
 
 
-## Author - Atharva Parkhe
+### 🔗 Content
 
-- Github - [atharvparkhe](https://www.github.com/atharvparkhe/)
-- LinkedIn - [Atharva Parkhe](https://www.linkedin.com/in/atharva-parkhe-3283b2202/)
-- Instagram - [atharvparkhe](https://www.instagram.com/atharvparkhe/)
-- Twitter - [atharvparkhe](https://www.twitter.com/atharvparkhe/)
+- [Overview](#quiz-application)
+- [Content](#-content)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [API Reference](#-api-reference)
+- [Run Locally](#-run-locally)
+- [Documentation](#-documentation)
+- [Screen-Shots](#-screen-shots)
+- [Author](#-author)
 
-## Features
+
+### 📋 Features
 
 - Create Quizes.
 - Set your own answers for the quiz.
@@ -27,70 +33,88 @@ Project Inspired from : https://funtriviaquiz.com
 - Answer Quizes made by others.
 
 
+### 🧰 Tech Stack
 
-## Tech Stack
+- **`BACKEND`** : Django *(Python)*
 
-**Backebd:** Django *(Python)*
+- **`DATABASE`** : SQLite3
 
-**Frontend:** ReactJS *(Java-Script)*
 
-## Run Locally
+### 🛠 API Reference
 
-***Step#1 :*** Create Virtual Environment
+**Postman Endpoints** : https://www.getpostman.com/collections/663e33802f2cebea5827
 
-```bash
-  virtualenv env
-```
+![Endpoints](docs/endpoints.png)
 
-***Step#2 :*** Activate Virtual Environment
+**API Endpoints JSON file** (for importing into thunderclient / postman) is available in the docs folder or click [here](docs/endpoints.json)
 
-```bash
-  source env/bin/activate
-```
 
-***Step#3 :*** Clone the project
+### 💻 Run Locally
+
+***Step#1 : Clone Project Repository***
 
 ```bash
-  git clone https://github.com/atharvparkhe/quiz.git
+git clone https://github.com/atharvparkhe/quiz-application.git && cd quiz-application
 ```
 
-***Step#4 :*** Go to the project directory
+***Step#2 : Create Virtual Environment***
+
+* If *virtualenv* is not istalled :
+```bash
+pip install virtualenv && virtualenv env
+```
+* **In Windows :**
+```bash
+env/Scripts/activate
+```
+* **In Linux or MacOS :**
+```bash
+source env/bin/activate
+```
+
+***Step#3 : Install Dependencies***
 
 ```bash
-  cd quiz
+pip install --upgrade pip -r requirements.txt
 ```
 
-***Step#5 :*** Install dependencies
+***Step#4 : Run Server***
 
 ```bash
-  pip install -r requirements.txt
+python manage.py runserver
 ```
 
-***Step#6 :*** Make Migrations
+*Check the terminal if any error.*
 
-```bash
-  python3 manage.py makemigrations
-  python3 manage.py migrate
-```
 
-***Step#7 :*** Run Server
+### 📄 Documentation
 
-```bash
-  python3 manage.py runserver
-```
+The docs folder contain all the project documentations and screenshots of the project.
 
-Check the terminal if any error.
+**Local Server Base Link :** http://localhost:8000/
 
-## Documentation
+**Admin Pannel Access :**
+- ***Email :*** "admin@admin.com"
+- ***Password :*** "password"
 
-The docs folder contain all the project documentations and screenshots related the project.
 
-Postman Endpoints - https://www.getpostman.com/collections/663e33802f2cebea5827
+### 🌄 Screen-Shots
 
-**ENDPOINTS**
+![All Categories](docs/project/all-categories.png)
+![Create Quiz](docs/project/create-quiz.png)
+![Set Quiz](docs/project/set-quiz.png)
+![Share Quiz](docs/project/share-quiz.png)
+![Play Quiz](docs/project/play-quiz.png)
+![Result](docs/project/result.png)
 
-![ENV file](docs/ss.png)
+### 🙋🏻‍♂️ Author
 
-## Demo
+**🤝 Connect with Atharva Parkhe**
 
-Youtube Tutorial - I will upload tutorial video soon. Stay Tuned.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/atharva-parkhe-3283b2202/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://www.github.com/atharvparkhe/)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://www.twitter.com/atharvparkhe/)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/atharvparkhe/)
+[![LeetCode](https://img.shields.io/badge/-LeetCode-FFA116?style=for-the-badge&logo=LeetCode&logoColor=black)](https://leetcode.com/patharv777/)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UChimOJO64hOqtE7HCgtiIig)
+[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/8WNC43Xsfc)
